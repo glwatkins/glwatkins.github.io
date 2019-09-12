@@ -12,6 +12,7 @@ const showComment = () => {
   const txtOutput = `Comment: ${commentVal}  Date Modifyed: ${document.lastModified}`
   p.appendChild(document.createTextNode(txtOutput)) // put the following txtOutput val in here commentVal
   commentSection.append(p)  
+  comment-input.value('')
 }
 //binding the data to an event handler
 document.getElementById('comment-data').addEventListener('click', showComment)

@@ -16,25 +16,6 @@ const showComment = () => {
 //binding the data to an event handler
 document.getElementById('comment-data').addEventListener('click', showComment)
 
-
-const ajaxJsonBtn = document.getElementById('ajax-json-btn')
-
-////////////////////////////////////////////////
-//This is the js to apllow for posting a comment
-const showComment = () => {
-    
-    //grabbing the value from the text area whitch has an id of comment-id
-  const commentVal = document.getElementById('comment-input').value = "" //adding the ="" clears the post box after it has been posted
-  //var lm = new Date(document.lastModified);
-  let p = document.createElement('p')
-  const commentSection = document.getElementById("commentSection")
-  const txtOutput = `Comment: ${commentVal}  Date Modifyed: ${document.lastModified}`
-  p.appendChild(document.createTextNode(txtOutput)) // put the following txtOutput val in here commentVal
-  commentSection.append(p)  
-}
-//binding the data to an event handler
-document.getElementById('comment-data').addEventListener('click', showComment)
-
 const jsonOutput = document.getElementById("jsonOutput")
 
 const loadJson = () => {
